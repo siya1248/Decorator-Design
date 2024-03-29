@@ -1,5 +1,6 @@
 namespace ConsoleApplication.Decorators;
-public class UpperCaseDecorator : Decorators<string>
+using ConsoleApplication.Interfaces;
+public class UpperCaseDecorator : Decorator<string>
 {
     public UpperCaseDecorator(IComponent<string> component) : base(component)
     {}

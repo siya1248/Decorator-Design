@@ -1,4 +1,5 @@
 namespace ConsoleApplication.Decorators;
+using ConsoleApplication.Interfaces;
 public abstract class Decorator<T> : IComponent<T>
 {
     protected IComponent<T> component;

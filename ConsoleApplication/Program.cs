@@ -1,4 +1,5 @@
-﻿using ConsoleApplication.Components;
+﻿using System;
+using ConsoleApplication.Components;
 using ConsoleApplication.Interfaces;
 using ConsoleApplication.Decorators;
 public class Program

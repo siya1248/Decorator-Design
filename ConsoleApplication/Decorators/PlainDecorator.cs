@@ -1,5 +1,6 @@
 namespace ConsoleApplication.Decorators;
-public class PlainDecorator : Decorators<string>
+using ConsoleApplication.Interfaces;
+public class PlainDecorator : Decorator<string>
 {
  public PlainDecorator(IComponent<string> component) : base(component) { }
 

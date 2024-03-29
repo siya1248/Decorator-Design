@@ -1,9 +1,10 @@
 namespace ConsoleApplication.Decorators;
-public ColorDecorator : Decorator<string>
+using ConsoleApplication.Interfaces;
+public class ColorDecorator : Decorator<string>
 {
     public ColorDecorator(IComponent<string> component) : base(component)
     {}
-    public override GetText()
+    public override string GetText()
     {
         return $"\u001b[31m{base.GetText()}\u001b[0m";
     }
